@@ -3,7 +3,7 @@
 let oldPassword = process.argv[2];
 
 function obfuscate(password) {
-  if (password && (typeof password === "string")) {
+  if (password && password.length >= 8) {
     let newPass = "";
     for (let char of password) {
       switch(char) {
@@ -24,7 +24,7 @@ function obfuscate(password) {
     }
     return newPass;
   }
-  return "Please enter a valid password";
+  return "Please enter a valid password of 8 or more characters";
 }
 
 console.log(obfuscate(oldPassword));
