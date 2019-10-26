@@ -1,6 +1,7 @@
 // Function to obfuscator a passed string
 
 function obfuscate(password) {
+  let newPass = "";
   for (let char of password) {
     switch(char) {
       case "a":
@@ -16,7 +17,9 @@ function obfuscate(password) {
         char = "1";
         break;
     }
+    newPass += char;
   }
-  return password;
+  return newPass;
 }
 
+console.log(obfuscate("password"));
