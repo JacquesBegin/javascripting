@@ -8,5 +8,5 @@ for (var i = 0; i < originalWords.length; i++) {
 console.log(pigLatinWords.join(' '));
 
 function translateToPigLatin(word) {
-  return word.slice(2, word.length) + word[0] + "ay";
+  return word.slice(1, word.length) + word[0] + "ay";
 }
