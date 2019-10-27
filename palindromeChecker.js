@@ -5,8 +5,9 @@ const isPalindrome = function(str) {
   const lastIndex = noSpaces.length - 1;
 
   for (let i = 0; i < midIndex; i++) {
-    if (str[i] !== str[lastIndex - i]) return false;
+    if (noSpaces[i] !== noSpaces[lastIndex - i]) return false;
   }
+  return true;
 }
 
 // Assertion Function
