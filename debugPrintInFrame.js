@@ -5,7 +5,7 @@ const printInFrame = function(list) {
 
   console.log(border);
   for (const word of list) {
-    console.log(`* ${word}${repeat(' ', longest - word.length + 1)}*`);
+    console.log(`* ${word}${repeat(' ', longest - word.length)}*`);
   }
   console.log(border);
 };
