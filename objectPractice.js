@@ -8,4 +8,8 @@ const obj = {
   }
 }
 
-console.log(obj.func());
+obj["name"] = "Bob";
+
+
+
+console.log(obj["name"]);
