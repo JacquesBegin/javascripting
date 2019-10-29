@@ -1,7 +1,7 @@
 const printInFrame = function(list) {
   list = list.split(' ');
   const longest = longestStr(list).length;
-  const border = repeat('*', longest);
+  const border = repeat('*', longest + 3);
 
   console.log(border);
   for (const word of list) {
@@ -24,9 +24,8 @@ const longestStr = function(list) {
   let longest = list[0];
 
   for (const str of list) {
-    longest = str;
+    if (str.length > longest.length) longest = str;
   }
-
   return longest;
 };
 
