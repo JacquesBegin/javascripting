@@ -26,3 +26,5 @@ obj["name"] = "Bob";
 console.log(obj["phone"] instanceof Object);
 console.log(obj["phone"] instanceof Array);
 console.log(obj["phone"] instanceof String);
+
+console.log(Object.keys(obj));
