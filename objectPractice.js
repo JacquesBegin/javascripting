@@ -34,5 +34,9 @@ for (let key of Object.keys(obj)) {
   console.log(key, obj[key]);
 }
 
+Object.entries(obj).forEach(([key, value]) => {
+  console.log(key, value);
+});
+
 
 // console.log(Object.keys(obj));
