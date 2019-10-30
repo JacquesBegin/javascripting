@@ -26,4 +26,10 @@ for (let [key, value] of Object.entries(obj)) {
   console.log(`${key}:${value}`);
 }
 
+Object.keys(obj).forEach(function(key) {
+  console.log(key, obj[key]);
+});
+
+
+
 // console.log(Object.keys(obj));
