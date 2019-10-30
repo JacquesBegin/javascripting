@@ -22,9 +22,8 @@ obj["name"] = "Bob";
 
 
 
-// console.log(obj["obj"]["A"]);
-console.log(obj["phone"] instanceof Object);
-console.log(obj["phone"] instanceof Array);
-console.log(obj["phone"] instanceof String);
+for (let [key, value] of Object.entries(obj)) {
+  console.log(`${key}:${value}`);
+}
 
-console.log(Object.keys(obj));
+// console.log(Object.keys(obj));
