@@ -30,6 +30,9 @@ Object.keys(obj).forEach(function(key) {
   console.log(key, obj[key]);
 });
 
+for (let key of Object.keys(obj)) {
+  console.log(key, obj[key]);
+}
 
 
 // console.log(Object.keys(obj));
